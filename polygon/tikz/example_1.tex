@@ -1,0 +1,14 @@
+\documentclass{standalone}
+\author{Quinten Bruynseraede}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\title{Tikz grafen}
+\begin{document}\pagestyle{empty}\begin{tikzpicture}\node[shape=circle,draw=black,align=center,line width=0.8pt] (0) at (6.233333333333333,13.066666666666666) {t1};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (1) at (4.166666666666667,9.466666666666667) {t2};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (2) at (8.3,9.466666666666667) {t3};
+
+\path [-,draw=black,line width=0.8pt] (0) edge node {} (1);
+\path [-,draw=black,line width=0.8pt] (1) edge node {} (2);
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (0);
+\end{tikzpicture}
+\end{document}

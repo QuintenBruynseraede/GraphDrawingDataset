@@ -1,0 +1,11 @@
+// Nodes are the first words on the line, but only if length 2
+// Nodes:
+ab
+cd
+ef
+gh
+// Not nodes:
+a xy
+abc jk
+abcde ui
+node11234

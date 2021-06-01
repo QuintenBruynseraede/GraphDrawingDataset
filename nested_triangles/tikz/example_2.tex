@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\author{Quinten Bruynseraede}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\title{Tikz grafen}
+\begin{document}\pagestyle{empty}\begin{tikzpicture}\node[shape=circle,draw=red,align=center,line width=0.8pt] (0) at (6.766666666666667,15.766666666666667) {y};
+\node[shape=circle,draw=red,align=center,line width=0.8pt] (1) at (1.0333333333333334,5.866666666666666) {z};
+\node[shape=circle,draw=red,align=center,line width=0.8pt] (2) at (12.466666666666667,5.866666666666666) {x};
+\node[shape=circle,draw=blue,align=center,line width=0.8pt] (3) at (6.766666666666667,13.966666666666667) {c};
+\node[shape=circle,draw=blue,align=center,line width=0.8pt] (4) at (2.6,6.766666666666667) {a};
+\node[shape=circle,draw=blue,align=center,line width=0.8pt] (5) at (10.9,6.766666666666667) {b};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (6) at (6.766666666666667,12.166666666666666) {j};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (7) at (4.166666666666667,7.666666666666667) {k};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (8) at (9.366666666666667,7.666666666666667) {i};
+
+\path [-,draw=black,line width=0.8pt] (1) edge node {} (0);
+\path [-,draw=black,line width=0.8pt] (0) edge node {} (2);
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (1);
+\path [-,draw=black,line width=0.8pt] (3) edge node {} (4);
+\path [-,draw=black,line width=0.8pt] (4) edge node {} (5);
+\path [-,draw=black,line width=0.8pt] (5) edge node {} (3);
+\path [-,draw=black,line width=0.8pt] (6) edge node {} (7);
+\path [-,draw=black,line width=0.8pt] (7) edge node {} (8);
+\path [-,draw=black,line width=0.8pt] (8) edge node {} (6);
+\end{tikzpicture}
+\end{document}

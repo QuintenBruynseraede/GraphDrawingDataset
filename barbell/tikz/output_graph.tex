@@ -1,0 +1,81 @@
+\documentclass{standalone}
+\author{Quinten Bruynseraede}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\title{Tikz grafen}
+\begin{document}\pagestyle{empty}\begin{tikzpicture}\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (0) at (0.7,11.233333333333333) {7};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (1) at (1.1,11.966666666666667) {8};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (2) at (2.033333333333333,12.266666666666667) {1};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (3) at (2.9,11.933333333333334) {2};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (4) at (3.2333333333333334,11.2) {3};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (5) at (2.8,10.466666666666667) {4};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (6) at (2.0,10.133333333333333) {5};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (7) at (1.0333333333333334,10.433333333333334) {6};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (8) at (9.233333333333333,11.533333333333333) {15};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (9) at (9.8,12.3) {16};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (10) at (10.7,12.666666666666666) {9};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (11) at (11.633333333333333,12.3) {10};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (12) at (12.0,11.466666666666667) {11};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (13) at (11.466666666666667,10.766666666666667) {12};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (14) at (10.566666666666666,10.5) {13};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (15) at (9.7,10.833333333333334) {14};
+
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (3);
+\path [-,draw=black,line width=0.8pt] (3) edge node {} (4);
+\path [-,draw=black,line width=0.8pt] (4) edge node {} (5);
+\path [-,draw=black,line width=0.8pt] (5) edge node {} (6);
+\path [-,draw=black,line width=0.8pt] (6) edge node {} (7);
+\path [-,draw=black,line width=0.8pt] (7) edge node {} (0);
+\path [-,draw=black,line width=0.8pt] (0) edge node {} (1);
+\path [-,draw=black,line width=0.8pt] (1) edge node {} (2);
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (4);
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (5);
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (6);
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (7);
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (0);
+\path [-,draw=black,line width=0.8pt] (3) edge node {} (5);
+\path [-,draw=black,line width=0.8pt] (3) edge node {} (6);
+\path [-,draw=black,line width=0.8pt] (3) edge node {} (7);
+\path [-,draw=black,line width=0.8pt] (3) edge node {} (0);
+\path [-,draw=black,line width=0.8pt] (3) edge node {} (1);
+\path [-,draw=black,line width=0.8pt] (4) edge node {} (1);
+\path [-,draw=black,line width=0.8pt] (4) edge node {} (0);
+\path [-,draw=black,line width=0.8pt] (4) edge node {} (7);
+\path [-,draw=black,line width=0.8pt] (4) edge node {} (6);
+\path [-,draw=black,line width=0.8pt] (5) edge node {} (1);
+\path [-,draw=black,line width=0.8pt] (5) edge node {} (0);
+\path [-,draw=black,line width=0.8pt] (5) edge node {} (7);
+\path [-,draw=black,line width=0.8pt] (6) edge node {} (1);
+\path [-,draw=black,line width=0.8pt] (6) edge node {} (0);
+\path [-,draw=black,line width=0.8pt] (7) edge node {} (1);
+\path [-,draw=black,line width=0.8pt] (10) edge node {} (11);
+\path [-,draw=black,line width=0.8pt] (11) edge node {} (12);
+\path [-,draw=black,line width=0.8pt] (12) edge node {} (13);
+\path [-,draw=black,line width=0.8pt] (13) edge node {} (14);
+\path [-,draw=black,line width=0.8pt] (14) edge node {} (15);
+\path [-,draw=black,line width=0.8pt] (15) edge node {} (8);
+\path [-,draw=black,line width=0.8pt] (8) edge node {} (9);
+\path [-,draw=black,line width=0.8pt] (9) edge node {} (10);
+\path [-,draw=black,line width=0.8pt] (10) edge node {} (12);
+\path [-,draw=black,line width=0.8pt] (10) edge node {} (13);
+\path [-,draw=black,line width=0.8pt] (10) edge node {} (14);
+\path [-,draw=black,line width=0.8pt] (10) edge node {} (15);
+\path [-,draw=black,line width=0.8pt] (10) edge node {} (8);
+\path [-,draw=black,line width=0.8pt] (11) edge node {} (13);
+\path [-,draw=black,line width=0.8pt] (11) edge node {} (14);
+\path [-,draw=black,line width=0.8pt] (11) edge node {} (15);
+\path [-,draw=black,line width=0.8pt] (11) edge node {} (8);
+\path [-,draw=black,line width=0.8pt] (11) edge node {} (9);
+\path [-,draw=black,line width=0.8pt] (12) edge node {} (9);
+\path [-,draw=black,line width=0.8pt] (12) edge node {} (8);
+\path [-,draw=black,line width=0.8pt] (12) edge node {} (15);
+\path [-,draw=black,line width=0.8pt] (12) edge node {} (14);
+\path [-,draw=black,line width=0.8pt] (13) edge node {} (9);
+\path [-,draw=black,line width=0.8pt] (13) edge node {} (8);
+\path [-,draw=black,line width=0.8pt] (13) edge node {} (15);
+\path [-,draw=black,line width=0.8pt] (14) edge node {} (9);
+\path [-,draw=black,line width=0.8pt] (14) edge node {} (8);
+\path [-,draw=black,line width=0.8pt] (15) edge node {} (9);
+\path [-,draw=black,line width=0.8pt] (4) edge node {} (8);
+\end{tikzpicture}
+\end{document}

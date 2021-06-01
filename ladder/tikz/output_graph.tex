@@ -1,0 +1,46 @@
+\documentclass{standalone}
+\author{Quinten Bruynseraede}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\title{Tikz grafen}
+\begin{document}\pagestyle{empty}\begin{tikzpicture}\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (0) at (3.5,14.666666666666666) {1};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (1) at (5.5,14.666666666666666) {9};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (2) at (3.5,13.666666666666666) {2};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (3) at (3.5,12.666666666666666) {3};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (4) at (3.5,11.666666666666666) {4};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (5) at (3.5,10.666666666666666) {5};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (6) at (3.5,9.666666666666666) {6};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (7) at (3.5,8.666666666666666) {7};
+\node[shape=rectangle,draw=black,align=center,line width=0.8pt] (8) at (3.5,7.666666666666667) {8};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (9) at (5.5,13.666666666666666) {10};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (10) at (5.5,12.666666666666666) {11};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (11) at (5.5,11.666666666666666) {12};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (12) at (5.5,10.666666666666666) {13};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (13) at (5.5,9.666666666666666) {14};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (14) at (5.5,8.666666666666666) {15};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (15) at (5.5,7.666666666666667) {16};
+
+\path [-,draw=black,line width=0.8pt] (0) edge node {} (2);
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (3);
+\path [-,draw=black,line width=0.8pt] (3) edge node {} (4);
+\path [-,draw=black,line width=0.8pt] (4) edge node {} (5);
+\path [-,draw=black,line width=0.8pt] (5) edge node {} (6);
+\path [-,draw=black,line width=0.8pt] (6) edge node {} (7);
+\path [-,draw=black,line width=0.8pt] (7) edge node {} (8);
+\path [-,draw=black,line width=0.8pt] (1) edge node {} (9);
+\path [-,draw=black,line width=0.8pt] (9) edge node {} (10);
+\path [-,draw=black,line width=0.8pt] (10) edge node {} (11);
+\path [-,draw=black,line width=0.8pt] (11) edge node {} (12);
+\path [-,draw=black,line width=0.8pt] (12) edge node {} (13);
+\path [-,draw=black,line width=0.8pt] (13) edge node {} (14);
+\path [-,draw=black,line width=0.8pt] (14) edge node {} (15);
+\path [-,draw=black,line width=0.8pt] (0) edge node {} (1);
+\path [-,draw=black,line width=0.8pt] (2) edge node {} (9);
+\path [-,draw=black,line width=0.8pt] (3) edge node {} (10);
+\path [-,draw=black,line width=0.8pt] (4) edge node {} (11);
+\path [-,draw=black,line width=0.8pt] (5) edge node {} (12);
+\path [-,draw=black,line width=0.8pt] (6) edge node {} (13);
+\path [-,draw=black,line width=0.8pt] (7) edge node {} (14);
+\path [-,draw=black,line width=0.8pt] (8) edge node {} (15);
+\end{tikzpicture}
+\end{document}

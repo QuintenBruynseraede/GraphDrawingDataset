@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\author{Quinten Bruynseraede}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\title{Tikz grafen}
+\begin{document}\pagestyle{empty}\begin{tikzpicture}\node[shape=circle,draw=black,align=center,line width=0.8pt] (0) at (3.6333333333333333,4.966666666666667) {n5};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (1) at (8.833333333333334,4.966666666666667) {n4};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (2) at (11.433333333333334,9.466666666666667) {n3};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (3) at (8.833333333333334,13.966666666666667) {n2};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (4) at (3.6333333333333333,13.966666666666667) {n1};
+\node[shape=circle,draw=black,align=center,line width=0.8pt] (5) at (1.0333333333333334,9.466666666666667) {n0};
+
+\path [dotted,-,draw=black,line width=0.8pt] (5) edge node {} (2);
+\path [dotted,-,draw=black,line width=0.8pt] (4) edge node {} (1);
+\path [dotted,-,draw=black,line width=0.8pt] (3) edge node {} (0);
+\end{tikzpicture}
+\end{document}
